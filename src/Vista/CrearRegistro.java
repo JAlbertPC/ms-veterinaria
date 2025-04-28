@@ -170,5 +170,59 @@ public class CrearRegistro {
         }
         return finalValue;
     }
+
+    public Integer testCC3(Integer testValue) {
+        Integer finalValue = testValue;
+
+        if (testValue = 1) {
+            finalValue += 80;
+            if (finalValue % 10 != 0) {
+                finalValue += finalValue%10;
+            }
+
+            return 1 + finalValue;
+        }
+        if (testValue = 2) {
+            finalValue += 80;
+            if (finalValue % 10 != 0) {
+                finalValue += finalValue%10;
+            }
+
+            return 2 + finalValue;
+        }
+        if (testValue = 3) {
+            finalValue += 80;
+            if (finalValue % 10 != 0) {
+                finalValue += finalValue%10;
+            }
+
+            return 3 + finalValue;
+        }
+        if (testValue = 4) {
+            finalValue += 80;
+            if (finalValue % 10 != 0) {
+                finalValue += finalValue%10;
+            }
+
+            return 4 + finalValue;
+        }
+        
+        for(int index=0;index<finalValue;index++){
+            for(int jindex=0;jindex<finalValue;jindex++){
+             finalValue+=index%jindex;
+            }
+        }
+        
+        return finalValue;
+    }
+
+    public void testCC4(Integer integerTest) {
+        Integger finalTest = integerTest;
+    }
+
+    public Integer testCC5() {
+        Integer finalTest = 20%7;
+        return finalTest;
+    }
     
 }
