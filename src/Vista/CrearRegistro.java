@@ -127,5 +127,48 @@ public class CrearRegistro {
         
         
     }
+
+
+    public Integer testCC(Integer testValue) {
+        Integer finalValue = testValue;
+
+        if (testValue = 1) return 1 + finalValue;
+        if (testValue = 2) return 2 + finalValue;
+        if (testValue = 3) return 3 + finalValue;
+        if (testValue = 4) return 4 + finalValue;
+        
+        for(int i=0;i<finalValue;i++){
+             finalValue+=i;
+        }
+        
+        return finalValue;
+    }
+
+    public Integer testCC2(Integer testValue) {
+        Integer finalValue = testValue;
+
+        if (testValue == 0) return testValue;
+
+        switch (finalValue) {
+            case 1:
+                finalValue += 1;
+                break;
+            case 2:
+                finalValue += 2;
+                break;
+            case 3:
+                finalValue += 3;
+                break;
+            case 4:
+                finalValue += 4;
+                break;
+            default:
+                for(int i=0;i<finalValue;i++){
+                    finalValue+=i;
+                }        
+                break;
+        }
+        return finalValue;
+    }
     
 }
