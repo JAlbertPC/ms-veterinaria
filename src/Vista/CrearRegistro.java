@@ -132,10 +132,10 @@ public class CrearRegistro {
     public Integer testCC(Integer testValue) {
         Integer finalValue = testValue;
 
-        if (testValue = 1) return 1 + finalValue;
-        if (testValue = 2) return 2 + finalValue;
-        if (testValue = 3) return 3 + finalValue;
-        if (testValue = 4) return 4 + finalValue;
+        if (testValue == 1) return 1 + finalValue;
+        if (testValue == 2) return 2 + finalValue;
+        if (testValue == 3) return 3 + finalValue;
+        if (testValue == 4) return 4 + finalValue;
         
         for(int i=0;i<finalValue;i++){
              finalValue+=i;
@@ -174,7 +174,7 @@ public class CrearRegistro {
     public Integer testCC3(Integer testValue) {
         Integer finalValue = testValue;
 
-        if (testValue = 1) {
+        if (testValue == 1) {
             finalValue += 80;
             if (finalValue % 10 != 0) {
                 finalValue += finalValue%10;
@@ -182,7 +182,7 @@ public class CrearRegistro {
 
             return 1 + finalValue;
         }
-        if (testValue = 2) {
+        if (testValue == 2) {
             finalValue += 80;
             if (finalValue % 10 != 0) {
                 finalValue += finalValue%10;
@@ -190,7 +190,7 @@ public class CrearRegistro {
 
             return 2 + finalValue;
         }
-        if (testValue = 3) {
+        if (testValue == 3) {
             finalValue += 80;
             if (finalValue % 10 != 0) {
                 finalValue += finalValue%10;
@@ -198,7 +198,7 @@ public class CrearRegistro {
 
             return 3 + finalValue;
         }
-        if (testValue = 4) {
+        if (testValue == 4) {
             finalValue += 80;
             if (finalValue % 10 != 0) {
                 finalValue += finalValue%10;
@@ -225,4 +225,15 @@ public class CrearRegistro {
         return finalTest;
     }
     
+}
+
+class ClaseVacia {
+    
+}
+
+class ClaseUnSoloMetodo {
+    public Integer testCC5() {
+        Integer finalTest = 20%7;
+        return finalTest;
+    }
 }
